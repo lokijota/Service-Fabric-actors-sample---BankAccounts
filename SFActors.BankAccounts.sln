@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Interfaces", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClientConsole", "TestClientConsole\TestClientConsole.csproj", "{027C306D-0CF9-45CC-BC58-2BBB375F44B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFActors.WebAPI", "SFActors.WebAPI\SFActors.WebAPI.csproj", "{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClientConsoleAzureSFCluster", "TestClientConsoleAzureSFCluster\TestClientConsoleAzureSFCluster.csproj", "{65936D02-B0F1-4AC0-929D-D433F246AD97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,20 @@ Global
 		{027C306D-0CF9-45CC-BC58-2BBB375F44B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{027C306D-0CF9-45CC-BC58-2BBB375F44B4}.Release|x64.ActiveCfg = Release|Any CPU
 		{027C306D-0CF9-45CC-BC58-2BBB375F44B4}.Release|x64.Build.0 = Release|Any CPU
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Debug|x64.ActiveCfg = Debug|x64
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Debug|x64.Build.0 = Debug|x64
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Release|Any CPU.ActiveCfg = Release|x64
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Release|x64.ActiveCfg = Release|x64
+		{6D967959-CA43-4D5E-8309-A9B26E5EAEC7}.Release|x64.Build.0 = Release|x64
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Debug|x64.Build.0 = Debug|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Release|x64.ActiveCfg = Release|Any CPU
+		{65936D02-B0F1-4AC0-929D-D433F246AD97}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

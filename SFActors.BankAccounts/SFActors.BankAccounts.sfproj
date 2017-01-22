@@ -27,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BankAccount\BankAccount.csproj" />
+    <ProjectReference Include="..\SFActors.WebAPI\SFActors.WebAPI.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

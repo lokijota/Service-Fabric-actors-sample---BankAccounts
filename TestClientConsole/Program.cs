@@ -54,6 +54,8 @@
 
                 // 'create' the actor
                 ActorId newActorId = new ActorId(accountNumber);
+
+
                 IBankAccount newBankAccount = ActorProxy.Create<IBankAccount>(newActorId, "fabric:/SFActors.BankAccounts");
                 newBankAccount.InitializeState(accountOwner, startingBalance).GetAwaiter().GetResult();
 
