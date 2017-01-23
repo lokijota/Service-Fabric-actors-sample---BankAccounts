@@ -2,11 +2,14 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
+    using System.Threading;
     using System.Threading.Tasks;
     using Interfaces;
     using Microsoft.ServiceFabric.Actors;
     using Microsoft.ServiceFabric.Actors.Client;
     using Microsoft.ServiceFabric.Actors.Runtime;
+    using Microsoft.ServiceFabric.Data;
 
     /// <remarks>
     /// This class represents an actor.
@@ -51,7 +54,6 @@
                 null,                          // parameter to reminder - must be byte[]
                 TimeSpan.FromSeconds(5),       // Amount of time to delay before the reminder is invoked
                 TimeSpan.FromMinutes(1));      // Time interval between invocations of the reminder method
-
 
             return;
         }
