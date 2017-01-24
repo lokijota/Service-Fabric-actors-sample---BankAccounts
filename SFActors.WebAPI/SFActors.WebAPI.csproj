@@ -163,7 +163,12 @@
       <Project>{dc50aa70-66c2-4de5-8bfe-70a35d462805}</Project>
       <Name>BankAccount.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SFActors.WebAPI.Contracts\SFActors.WebAPI.Contracts.csproj">
+      <Project>{cac8d438-ea2e-4472-800b-481d8cdaa391}</Project>
+      <Name>SFActors.WebAPI.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.ServiceFabric.Actors.2.4.145\build\Microsoft.ServiceFabric.Actors.targets" Condition="Exists('..\packages\Microsoft.ServiceFabric.Actors.2.4.145\build\Microsoft.ServiceFabric.Actors.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

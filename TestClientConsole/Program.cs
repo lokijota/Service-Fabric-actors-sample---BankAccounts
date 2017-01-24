@@ -60,7 +60,7 @@
                 newBankAccount.InitializeState(accountOwner, startingBalance).GetAwaiter().GetResult();
 
                 BankAccountStateBase state = newBankAccount.GetAccountInfo().GetAwaiter().GetResult();
-                Console.WriteLine(state.CustomerName + " has £" + state.Balance + " in account nb: " + state.AccountNumber);
+                Console.WriteLine(state.CustomerName + " has €" + state.Balance + " in account nb: " + state.AccountNumber);
 
                 _accounts.Add(accountNumber);
             }
@@ -91,7 +91,7 @@
                 double howMuch = r.NextDouble() * 500;
                 short onMinute = (short) r.Next(0, 60);
                 sourceAccountProxy.AddStandingOrder(_accounts[posTarget], howMuch, onMinute);
-                Console.WriteLine("SO payable to account {0} of £{1:f2} on minute {2}", _accounts[posTarget], howMuch, onMinute);
+                Console.WriteLine("SO payable to account {0} of €{1:f2} on minute {2}", _accounts[posTarget], howMuch, onMinute);
             }
 
             Console.ForegroundColor = ConsoleColor.Yellow;

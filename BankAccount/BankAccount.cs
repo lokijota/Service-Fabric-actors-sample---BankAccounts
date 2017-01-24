@@ -167,7 +167,7 @@
                 {
                     if (so.RecurrenceMinute == now.Minute)
                     {
-                        ActorEventSource.Current.ActorMessage(this, "@BankAccount.ReceiveReminderAsync paying from '{0}' to '{1}': £{2:f2}", Id.GetStringId(), so.ToAccountNumber, so.Amount);
+                        ActorEventSource.Current.ActorMessage(this, "@BankAccount.ReceiveReminderAsync paying from '{0}' to '{1}': €{2:f2}", Id.GetStringId(), so.ToAccountNumber, so.Amount);
 
                         // time to pay, says Roy Batty
                         Random r = new Random();
