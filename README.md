@@ -1,4 +1,4 @@
-# Service-Fabric-actors-sample---BankAccounts
+# Azure Service Fabric actors sample - BankAccounts
 Service Fabric sample with the actor model
 
 This sample includes:
