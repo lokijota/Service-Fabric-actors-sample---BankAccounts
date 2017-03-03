@@ -20,7 +20,7 @@
     [ServiceRequestActionFilter]
     public class AccountsController : ApiController
     {
-        // GET api/accounts/get 
+        // Enumerates for full list of actors, return nested in partition
         [HttpGet]
         [ActionName("get")]
         public List<PartitionActors> Get()
@@ -78,6 +78,7 @@
             return partitionActors;
         }
 
+        // Get the current balance of a given account
         [HttpGet]
         [ActionName("getbalance")]
         public AccountDetail GetAccountBalance(string accountId)
@@ -92,7 +93,7 @@
             return new AccountDetail { AccountNumber = state.AccountNumber, Balance = state.Balance };
         }
 
-        // GET api/accounts/deleteall 
+        // Remove the actors (not just deativate, kill them)
         [HttpGet]
         [ActionName("deleteall")]
         public int DeleteAll(int bogus = 1)
@@ -100,7 +101,6 @@
             IEnumerable<string> actorIds = Get().SelectMany(x => x.ActorsInPartition);
             CancellationToken cancelationToken = default(CancellationToken);
             int count = 0;
-
 
             foreach (string actorId in actorIds)
             {
@@ -113,7 +113,7 @@
             return count;
         }
 
-
+        // helper - create a number of accounts with random data
         [HttpPost]
         [ActionName("create")]
         public List<string> CreateAccounts([FromBody] int count)
@@ -173,7 +173,7 @@
             return accounts;
         }
 
-
+        // create standing order(s)
         [HttpPost]
         [ActionName("createstandingorders")]
         public int CreateStandingOrders([FromBody] List<Contracts.StandingOrder> standingOrders)
